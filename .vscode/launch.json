@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "linux kernel debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/vmlinux",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            // 注意 ： miDebuggerPath 必须是绝对路径
+            "miDebuggerPath":"/usr/bin/gdb-multiarch",
+            "miDebuggerServerAddress": ":1234"
+        }
+    ]
+}
